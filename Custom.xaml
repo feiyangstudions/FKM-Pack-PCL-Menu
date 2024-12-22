@@ -1,0 +1,49 @@
+﻿<!-- 这是 PCL 的主页自定义文件。你可以通过修改这个文件来自定义 PCL 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL 玩炸了，把这个文件直接删除就行了。
+     下列内容均基于 WPF 框架。你可以在继续之前先尝试自学 XAML 与 WPF 的基础，这能让你更轻松地理解下列内容。
+     你也可以使用 Ctrl + F 快速查找。例如，若需要改变文本颜色，则搜索 “颜色” 即可。 -->
+
+<local:MyCard Title="Feiyang冒险与科技整合包启动器主页" Margin="0,0,0,15" CanSwap="False" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#6A9955"
+                    Text="这是FeiyangStudios制作的兼有冒险与科技模组的小型整合包主页" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="11"
+                    Text="您可以在此查看最新的冒险与科技整合包消息，此主页会连接Github以更新" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#F6764F"
+                    Text="对于目前，所有此整合包安装方法均为解压之.minecraft\version目录下运行"/>
+        <local:MyHint Margin="20,5,20,0" IsWarn="False"
+                    Text="别乱动这个启动器哟~" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Feiyang冒险与科技整合包3.0更新！" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="15" Foreground="#0B5BCB"
+                    Text="飞扬的冒险与科技整合包3.0大更新啦！"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="本次更新主要内容："/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="· 添加汤姆的简易存储    让储存的物品不再找不到！"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="· 添加了一些机械动力附属    让生存和科技变得更有趣！"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="· 添加了区块加载器    让区块的工作不再停止！"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="· 添加了通量网络    让能量传输爽飞天，无线传输！"/>
+        <local:MyTextButton HorizontalAlignment="Left"
+                    Text="· 添加了投影    让建筑更简单！" EventType="弹出窗口" EventData="你问我为什么Forge能装投影？|早在2.0版本已经有了信雅互联模组，\n支持一些典型的Fabric模组安装在Forge里面。\n了解？" />
+        <TextBlock TextWrapping="Wrap" Margin="0,4,0,4"
+                    Text="· 添加了通用机械发电机    没他我看你怎么发电！"/>
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="· 添加了Pipez    总得有个好用的管道吧！"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="整合包3.0下载" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="很抱歉，我们没有找到免费好用的网盘，只能选择夸克网盘，作者是学生党，见谅"/>
+        <local:MyButton Width="140" Height="35" HorizontalAlignment="Center" Padding="13,0,13,0" ColorType="Highlight"
+                    Text="下载链接在这里" EventType="打开网页" EventData="https://pan.quark.cn/s/4e30050b2a6b" />
+    </StackPanel>
+</local:MyCard>
